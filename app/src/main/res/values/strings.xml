@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Nearest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map_guide">Map</string>
+    <string-array name="day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>臺北市</item>
+        <item>新北市</item>
+        <item>桃園市</item>
+        <item>臺中市</item>
+        <item>臺南市</item>
+        <item>高雄市</item>
+        <item>基隆市</item>
+        <item>新竹縣</item>
+        <item>苗栗縣</item>
+        <item>彰化縣</item>
+        <item>南投縣</item>
+        <item>雲林縣</item>
+        <item>嘉義縣</item>
+        <item>屏東縣</item>
+        <item>宜蘭縣</item>
+        <item>花蓮縣</item>
+        <item>臺東縣</item>
+        <item>澎湖縣</item>
+    </string-array>
+
+    <string name="city">縣市</string>
+    <string name="day">天數</string>
+    <string name="Taipei">臺北市</string>
+    <string name="Xinbei">新北市</string>
+    <string name="Taoyuan">桃園市</string>
+    <string name="Taichung">臺中市</string>
+    <string name="Tainan">臺南市</string>
+    <string name="Kaohsiung">高雄市</string>
+    <string name="Keelung">基隆市</string>
+    <string name="Hsinchu">新竹縣</string>
+    <string name="Miaoli">苗栗縣</string>
+    <string name="Changhua">彰化縣</string>
+    <string name="Nantou">南投縣</string>
+    <string name="Yunlin">雲林縣</string>
+    <string name="Chiayi">嘉義縣</string>
+    <string name="Pingtung">屏東縣</string>
+    <string name="Yilan">宜蘭縣</string>
+    <string name="Hualien">花蓮縣</string>
+    <string name="Taitung">臺東縣</string>
+    <string name="Penghu">澎湖縣</string>
+    <string name="test1">水璉位在花蓮縣壽豐鄉海濱，蒼翠的山丘環抱著寬廣的河谷盆地，水璉溪蜿蜒而過，是多種族群融合的社區，區內擁有豐富的自然資源及特殊的地質景觀，以及動植物生態和原住民文化等珍貴的觀光資產。座落在水璉南方海灘的牛山，阿美族叫Huting(呼定)，意即大片草地的牧場。牛山擁有特殊地形，最奇特的是南岸貌似梯田的山丘小階，曾是水牛的牧草區，春天滿山坡的台灣百合盛開，可謂野百合的原生勝地。牛山的植物群相豐富，幾乎是東部海岸植物相的縮影，民國76年已列入台灣沿海保護區計畫中之自然保護區。從水璉到牛山，最吸引人的是綿延數公里的海灘，春夏的海灘柔細溫潤，赤足漫步在沙灘上，海風徐徐吹拂，彷彿置身「海角一樂園」，閒適自在、悠遊自得；秋冬的海灘，則佈滿五顏六色的鵝卵石，隨浪翻滾，美不勝收。</string>
+
+    <!--  Menu items -->
+    <string name="settings">Settings</string>
+    <string name="refresh">Refresh</string>
+
+    <!--  NetworkActivity -->
+    <string name="page_title">Newest StackOverflow questions tagged \'android\'</string>
+    <string name="updated">Last updated:</string>
+    <string name="lost_connection">Lost connection.</string>
+    <string name="wifi_connected">Wi-Fi reconnected.</string>
+    <string name="connection_error">Unable to load content. Check your network connection.</string>
+    <string name="xml_error">Error parsing XML.</string>
+</resources>

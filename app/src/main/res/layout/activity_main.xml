@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/imgBtnRecommend"
+        android:onClick="RecommendClick"
+        android:text="推薦行程"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        android:focusable="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/imgBtnCustom"
+        android:onClick="CustomClick"
+        android:text="自訂行程"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/imgBtnSearch"
+        android:text="景點搜尋"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="SearchClick"
+        android:nestedScrollingEnabled="false" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|right"/>
+</LinearLayout>

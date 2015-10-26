@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+
 public class AllProductsActivity extends Activity {
 
     private static final String DB_FILE = "friends.db",
@@ -61,7 +62,7 @@ public class AllProductsActivity extends Activity {
         // 取得上面指定的檔名資料庫，如果該檔名不存在就會自動建立一個資料庫檔案
         mFriDbRW = friDbHp.getWritableDatabase();
     }
-    //https://github.com/BrookJ/Nearst.git
+
     public void insertDbData(String aa , String bb){
         ContentValues newRow = new ContentValues();
         newRow.put("name", aa);
@@ -69,16 +70,14 @@ public class AllProductsActivity extends Activity {
         mFriDbRW.insert(DB_TABLE, null, newRow);
     }
 
-    public void setTextll(){
-        myTextView.setText(lll);
-    }
-
     public class AsyncTaskParseJson extends AsyncTask<String, String, String> {
 
         final String TAG = "AsyncTaskParseJson.java";
 
         // set your json string url here
-        String yourJsonStringUrl = "http://charleslin74.esy.es/contact/index.php";
+        //String yourJsonStringUrl = "http://charleslin74.esy.es/contact/index.php";
+        String yourJsonStringUrl = "http://gis.taiwan.net.tw/XMLReleaseALL_public/scenic_spot_C_f.json";
+        //String yourJsonStringUrl = "http://140.131.114.167/~travel/20151020test.php";
 
         // contacts JSONArray
         JSONArray dataJsonArr = null;
@@ -93,20 +92,22 @@ public class AllProductsActivity extends Activity {
 
                 // instantiate our json parser
                 JSONParser jParser = new JSONParser();
-
+                Log.e("asdfasdf","95");
                 // get json string from url
                 JSONObject json = jParser.getJSONFromUrl(yourJsonStringUrl);
-
+                Log.e("asdfasdf","98");
                 // get the array of users
-                dataJsonArr = json.getJSONArray("KHtravel");
-
+                //dataJsonArr = json.getJSONArray("KHtravel");
+                dataJsonArr = json.getJSONArray("Infos");
+                //dataJsonArr = json.getJSONArray("products");
+                Log.e("asdfasdf","102");
                 // loop through all users
                 //for (int i = 0; i < dataJsonArr.length(); i++) {
                 for (int i = 0; i < 10; i++) {
                     JSONObject c = dataJsonArr.getJSONObject(i);
 
                     // Storing each json item in variable
-                    String id = c.getString("id");
+                    String id = c.getString("pid");
                     String name = c.getString("name");
                     //String username = c.getString("username");
                     insertDbData(id , name);

@@ -83,5 +83,15 @@ public class Recommend  extends ExpandableListActivity {
     public void btnSentClick(View set){
         Intent intRecommend = new Intent(Recommend.this,MapGuide.class);
         startActivity(intRecommend);
+        Double aaa = (double) 25.047658;
+        //new一個Bundle物件，並將要傳遞的資料傳入
+        Bundle bundle = new Bundle();
+        bundle.putDouble("height",aaa);
+
+        //將Bundle物件assign給intent
+        intRecommend.putExtras(bundle);
+
+        //切換Activity
+        startActivity(intRecommend);
     }
 }
